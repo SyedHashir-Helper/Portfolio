@@ -36,7 +36,7 @@ export default function Testimonial() {
     { skill: 'C#', percentage: 75, icon: <SiCsharp size={70}/>, learning: false },
     { skill: 'WinForms', percentage: 90, icon: <FaWindows size={70}/>, learning: false },
     { skill: 'WPF', percentage: 90, icon: <SiMicrosoft size={70}/>, learning: false },
-    { skill: 'Computer Vision', percentage: 50, icon: <FaEye size={70}/>, learning: false },
+    { skill: 'Computer Vision', percentage: 40, icon: <FaEye size={70}/>, learning: false },
     { skill: 'SQL', percentage: 70, icon: <SiMysql size={70}/> , learning: false},
     { skill: 'Django', percentage: 0, icon: <SiDjango size={70}/>, learning: true },
     { skill: 'Generative AI', percentage: 0, icon: <SiTensorflow size={70}/>, learning: true },
