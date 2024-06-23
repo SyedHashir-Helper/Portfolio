@@ -6,7 +6,7 @@ let data = [
     title: "Merchant Monetary System",
     describe: "Inventory Delivery System",
     desc: "The project streamlines inventory management by facilitating communication and coordination between shopkeepers, riders, warehouse managers, and employees. It ensures efficient goods storage in warehouses and timely delivery to shopkeepers via designated riders.",
-    github: "",
+    github: "https://gitlab.com/hamadhassan/cs261f22finalpid11",
     other: "",
     keySkills: ["LinkedList", "Doubly LinkedList", "Hash Tables", "Binary Search Tree"],
     developed: ".NET Desktop Application"
@@ -33,7 +33,7 @@ let data = [
     title: "Falcon Student Maintainer",
     describe: "Course & Assessment Management",
     desc: "The project aims to facilitate comprehensive student management, attendance tracking, and assessment evaluation, integrating features for managing Course Learning Outcomes (CLOs), rubrics, and assessment evaluations.",
-    github: "",
+    github: "https://gitlab.com/SyedHashir-Helper/cs262s23cs01",
     other: "",
     keySkills: ["T-SQL", "DDL", "DML", "MS SQL Server"],
     developed: ".NET Desktop Application (C#)"
@@ -50,9 +50,9 @@ let data = [
   {
     title: "Diabetes Prediction System",
     describe: "Using Machine Learning Diagnose Diabetes",
-    desc: "The Diabetes Prediction System utilizes a machine learning model, specifically a Support Vector Machine (SVM) implemented with sci-kit learn, to predict the likelihood of diabetes based on input features. Model has accuracy of 76%",
+    desc: "The Diabetes Prediction System utilizes a machine learning model, specifically a k-Nearest Neighbour implemented with sci-kit learn, to predict the likelihood of diabetes based on input features. Model has accuracy of 76%",
     github: "",
-    other: "",
+    other: "https://colab.research.google.com/drive/1kojcOqWkxrd7XI79h4RXw9KKXCbLYmmw#scrollTo=GUyPSNEkPKdE",
     keySkills: ["Data Pre-processing", "Classification", "scikit-learn"],
     developed: "Web Application (Flask)"
   },
@@ -60,8 +60,8 @@ let data = [
     title: "Classification of Web Documents",
     describe: "Using KNN, Predict the document category",
     desc: "The project involves implementing K-Nearest Neighbors (KNN) algorithm for web document classification, enabling efficient categorization of content based on similarity to neighboring documents with accuracy ~ 92%. ",
-    github: "",
-    other: "",
+    github: "https://github.com/SyedHashir-Helper/Classification-of-Web-Documents",
+    other: "https://colab.research.google.com/drive/1iIQvR-v7LVbO1eKpw9YighKRoryqxXYO#scrollTo=GAvIYKsaLaRF",
     keySkills: [ "Text Processing", "KNN", "MCS", "Web Scrapping"],
     developed: "Python Console"
   },
@@ -69,7 +69,7 @@ let data = [
     title: "Incog-Files Dev",
     describe: "Secure File Uploading and Processing",
     desc: "Developed a secure web application using React and Node.js, featuring server-side validation and sanitization to prevent common vulnerabilities such as file inclusion attacks and malicious file execution. Utilized VirusTotal API for file scanning and Amazon S3 Bucket for secure storage",
-    github: "",
+    github: "https://github.com/Shahzaib-Irfan/Secure-File-Uploading-And-Processing",
     other: "",
     keySkills: [  "S3 Bucket", "SQL Injection / XSS", "Directory Traversal", "File Inclusion Attack"],
     developed: "Web Application (MERN)"
@@ -78,8 +78,8 @@ let data = [
     title: "Object Detection (YOLOv8)",
     describe: "Crowd & Harmful Objects",
     desc: "Developed a surveillance system utilizing YOLOv8 to detect harmful objects such as guns and fire amidst crowds, triggering alerts via email and WhatsApp upon detection. Implemented using Python on Google Colab, ensuring real-time monitoring for enhanced security measures.",
-    github: "",
-    other: "",
+    github: "https://github.com/SyedHashir-Helper/Crowd-and-Harmful-Objects-detection",
+    other: "https://colab.research.google.com/drive/1Kw7IxDils-2FUTmw--3hIp7jEyoPfMaC#scrollTo=UdnkBZVn9Xyb",
     keySkills: [ "OpenCV", "YOLOv8", "Mail Gun API", "Model Training"],
     developed: "Google Colab Notebook"
   },
