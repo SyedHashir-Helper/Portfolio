@@ -78,10 +78,19 @@ let data = [
     title: "Object Detection (YOLOv8)",
     describe: "Crowd & Harmful Objects",
     desc: "Developed a surveillance system utilizing YOLOv8 to detect harmful objects such as guns and fire amidst crowds, triggering alerts via email and WhatsApp upon detection. Implemented using Python on Google Colab, ensuring real-time monitoring for enhanced security measures.",
-    github: "https://github.com/SyedHashir-Helper/Crowd-and-Harmful-Objects-detection",
+    github: "https://github.com/SyedHashir-Helper/Netflix-Landing-Page-React-",
     other: "https://colab.research.google.com/drive/1Kw7IxDils-2FUTmw--3hIp7jEyoPfMaC#scrollTo=UdnkBZVn9Xyb",
     keySkills: [ "OpenCV", "YOLOv8", "Mail Gun API", "Model Training"],
     developed: "Google Colab Notebook"
+  },
+  {
+    title: "Netflix Landing Page in React JS",
+    describe: "Component-Based Framework",
+    desc: "Non-Responsive Netflix Landing Page created in React JS to practice component-based framework",
+    github: "https://github.com/SyedHashir-Helper/Crowd-and-Harmful-Objects-detection",
+    other: "https://syedhashirhusnain-react01.netlify.app/",
+    keySkills: ["React JS", "Ant Design", "HTML", "CSS", "Bootstrap"],
+    developed: "React JS"
   },
 
 ];
