@@ -118,10 +118,10 @@ const Project = () => {
               }</div>
               <div className='project-box-links portfolio-links'>
                 <span>
-                  <i class="ri-github-fill"><a href={element.github}></a></i>
+                  <a href={element.github}><i class="ri-github-fill"></i></a>
                 </span>
                 <span>
-                  <i class="ri-global-line"><a href={element.other}></a></i>
+                  <a href={element.other}> <i class="ri-global-line"></i></a>
                 </span>
               </div>
             </div>
