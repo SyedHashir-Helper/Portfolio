@@ -86,7 +86,7 @@ let data = [
   {
     title: "Netflix Landing Page in React JS",
     describe: "Component-Based Framework",
-    desc: "Non-Responsive Netflix Landing Page created in React JS to practice component-based framework",
+    desc: "Responsive Netflix Landing Page created in React JS to practice component-based framework",
     github: "https://github.com/SyedHashir-Helper/Crowd-and-Harmful-Objects-detection",
     other: "https://syedhashirhusnain-react01.netlify.app/",
     keySkills: ["React JS", "Ant Design", "HTML", "CSS", "Bootstrap"],
