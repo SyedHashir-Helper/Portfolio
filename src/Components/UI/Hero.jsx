@@ -57,7 +57,7 @@ export default function Hero(props) {
               {
                 contacts.map((element, index)=>{
                   return(
-                    <Col className="icon-con" md={8} xs={8}>
+                    <Col key={index} className="icon-con" md={8} xs={8}>
                       <a href={element.link}>{element.icon}</a>
                     </Col>
                   )
