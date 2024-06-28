@@ -1,6 +1,7 @@
 .hero-wrapper{
     display: flex;
     justify-content: space-between;
+    flex-direction: column;
 }
 
 .hero-content, .hero-img{
@@ -8,12 +9,12 @@
 }
 .hero-img{
     display: flex;
-    justify-content: flex-end;
+    padding: 0% 2% 2% 2%;
 }
 
 .hero-img img{
     width: 100%;
-    border-radius: 50%;
+    filter: drop-shadow(10px 10px 10px rgba(0,0,0,0.6));
 }
 
 .typewriter h2:nth-child(2){
@@ -48,7 +49,6 @@
 }
 
 .hero-content p{
-    margin-top: 40px;
     font-size: 1.1rem;
 }
 
@@ -89,6 +89,21 @@
     border: 1px solid var(--btn-primary-bg);
 }
 
+.hero-contact-me{
+    border: 2px solid var(--btn-primary-bg);
+    border-radius: 15%;
+    margin: 4% 0%;
+    /* background-color: red; */
+    /* background-color: linear-gradient(45deg, rgba(15, 18, 61, 1), rgba(15, 18, 61, 1),  rgba(11, 41, 69, 1) ) !important; */
+    width: 100%;
+    padding: 5%;
+    display: flex;
+    justify-content: center;
+}
+.icon-con{
+    text-align: center;
+}
+
 @media only screen and (max-width: 992px) {
     .hero-content h2{
         font-size: 2rem;
@@ -98,6 +113,10 @@
 
 @media only screen and (max-width: 768px) {
     .hero-content h2{
+        font-size: 1.5rem;
+        line-height: 45px;
+    }
+    .hero-content h1{
         font-size: 1.5rem;
         line-height: 45px;
     }
