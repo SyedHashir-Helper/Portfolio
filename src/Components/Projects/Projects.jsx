@@ -1,22 +1,23 @@
 import React, { useState } from "react";
 import styled from "styled-components";
+import {Row, Col} from "antd"
 
 const Projects = ({element}) => {
     const [isActive, setIsActive] = useState(false);
 
   return (
     <div className="project-detail">
-      <div className="project-box" onClick={() => setIsActive(!isActive)}>
-        <div>
+      <Row className="project-box" onClick={() => setIsActive(!isActive)}>
+        <Col md={12} xs={24}>
           <div className="project-box-title">{element.title}</div>
           <div className="project-box-describe">{element.describe}</div>
-        </div>
-        <div className="project-box-developed">{element.developed}</div>
-      </div>
+        </Col>
+        <Col md={12} xs={24} className="project-box-developed">{element.developed}</Col>
+      </Row>
       {isActive && (
         <div>
           <div className="project-box-description">{element.desc}</div>
-          <div className="project-box-skills">
+          <Row className="project-box-skills">
             {element.keySkills.map((skill, index) => {
               return (
                 <button key={index} className="btn-skill">
@@ -24,7 +25,7 @@ const Projects = ({element}) => {
                 </button>
               );
             })}
-          </div>
+          </Row>
         </div>
       )}
       <div className="project-box-links portfolio-links">

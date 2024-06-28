@@ -29,6 +29,8 @@
 .project-box-links{
     display: flex;
     justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
 }
 
 .project-detail{
@@ -42,4 +44,9 @@
     border-radius: 0.1rem;
     background-color: var(--btn-secondary-bg);
     border: none;
+    color: black;
+    margin-bottom: 1%;
+}
+.project-box-developed{
+    text-align: right;
 }
