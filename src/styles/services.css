@@ -24,7 +24,8 @@
     padding: 30px 15px;
     text-align: center;
     border-radius: .5rem;
-    cursor: pointer;
+    /* border: 1px solid var(--btn-primary-bg); */
+    filter: drop-shadow(1px 1px 1px  var(--btn-primary-bg));
 }
 
 .service-icon{
@@ -86,5 +87,22 @@
 @media only screen and (max-width: 567px) {
     .services-item{
         width: 100%;
+    }
+}
+
+.service-icon:hover{
+    animation: rotateit 1s ease;
+}
+
+.services-item:hover{
+    border: none;
+}
+
+@keyframes rotateit {
+    0%{
+        rotate: 0deg;
+    }
+    100%{
+        rotate: 360deg;
     }
 }

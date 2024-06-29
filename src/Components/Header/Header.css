@@ -53,7 +53,8 @@
     top:0;
     left: 0;
     z-index: 9999;
-    background: #000;
+    background: var(--card-bg);
+    border-bottom: 1px solid var(--btn-primary-bg);
 }
 
 .mobile-menu{

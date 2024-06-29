@@ -50,3 +50,16 @@
 .project-box-developed{
     text-align: right;
 }
+.project-detail-display{
+    animation: appear 1s;
+}
+@keyframes appear {
+    0%{
+        opacity: 0;
+        scale: 0.98;
+    }
+    100%{
+        opacity: 100%;
+        scale: 1;
+    }
+}

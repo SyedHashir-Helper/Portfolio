@@ -26,13 +26,14 @@ export default function Hero(props) {
 
   const handleClick = (e) => {
     e.preventDefaut();
+    alert("Hey")
 
     const targetAttr = e.target.getAttribute("href");
     const location = document.querySelector(targetAttr).offsetTop;
 
     window.scrollTo({
       left: 0,
-      top: location - 80,
+      top: location,
     });
   };
   return (
@@ -49,7 +50,7 @@ export default function Hero(props) {
             "Web Innovation Architect, Unleashing Possibilities Across the Full Stack"
             </p>
             <div className="hero-btns">
-              <button className="primary-btn" href="#about" onClick={handleClick}>Know More</button>
+              <a href="#about"><button className="primary-btn" onClick={handleClick} >Know More</button></a>
               <a href="https://www.linkedin.com/in/syedhashircs01/"><button className="secondary-btn" >Get in touch</button></a>
             </div>
 

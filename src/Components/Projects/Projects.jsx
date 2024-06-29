@@ -15,7 +15,7 @@ const Projects = ({element}) => {
         <Col md={12} xs={24} className="project-box-developed">{element.developed}</Col>
       </Row>
       {isActive && (
-        <div>
+        <div className="project-detail-display">
           <div className="project-box-description">{element.desc}</div>
           <Row className="project-box-skills">
             {element.keySkills.map((skill, index) => {
