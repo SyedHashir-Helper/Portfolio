@@ -1,4 +1,4 @@
-import React from "react";
+import {React, useRef, useEffect} from "react";
 import "../../styles/testimonial.css";
 import ava01 from "../../images/ava-1.jpg";
 import ava02 from "../../images/ava-2.jpg";
@@ -19,8 +19,7 @@ import { SiPostgresql, SiMysql } from 'react-icons/si';
 import { SiDjango, SiTensorflow } from 'react-icons/si';
 import { FaBrain } from 'react-icons/fa';
 import Skillbar from "../Skillbar/Skillbar";
-
-
+import {Row, Col} from 'antd'
 export default function Testimonial() {
   const skills = [
     { skill: 'HTML5', percentage: 90, icon: <FaHtml5 size={70}/>, learning: false},
@@ -62,15 +61,22 @@ export default function Testimonial() {
             <h2>Enhancing efficiency in  <span className="highlight">tasks and projects</span></h2>
         </div>
 
-        <div className="slider-wrapper">
-          <Slider {...settings}>
-          {skills.map((skill, index) => (
+        <Row>
 
-                <Skillbar key={index} skill={skill.skill} percentage={skill.percentage} icon={skill.icon} learning={skill.learning} />
-          ))}
+        {/* <div className="slider-wrapper">
+          <Slider {...settings}>
           </Slider>
-        </div>
+          </div> */}
+
+          {skills.map((skill, index) => (
+            <Col md={6} xs={24}>
+                <Skillbar key={index} skill={skill.skill} percentage={skill.percentage} icon={skill.icon} learning={skill.learning} />
+            </Col>
+          ))}
+          </Row>
+
       </div>
+
     </section>
   );
 }

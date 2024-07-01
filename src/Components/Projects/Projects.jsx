@@ -3,7 +3,7 @@ import styled from "styled-components";
 import {Row, Col} from "antd"
 
 const Projects = ({element}) => {
-    const [isActive, setIsActive] = useState(false);
+  const [isActive, setIsActive] = useState(false);
 
   return (
     <div className="project-detail">

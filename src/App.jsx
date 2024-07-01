@@ -12,6 +12,7 @@ import './App.css'
 // import Projects from './Components/Projects/Projects';
 import Affiliations from './Components/UI/Affiliations';
 import Project from './Components/UI/Project';
+import Experiences from './Components/UI/Experiences';
 
 function App() {
   const [theme, setTheme] = useState('');
@@ -31,6 +32,7 @@ function App() {
       <Hero theme={theme} />
       <Counter/>
       <Services/>
+      <Experiences/>
       {/* <About/> */}
       {/* <Portfolio/> */}
       <Testimonial/>
