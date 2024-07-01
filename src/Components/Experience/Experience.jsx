@@ -13,7 +13,7 @@ const Experience = ({ element }) => {
     <Row>
       <Col
         md={4}
-        xs={24}
+        xs={6}
         className="img-exp"
         style={{
           display: "flex",
@@ -24,7 +24,7 @@ const Experience = ({ element }) => {
       >
         {element.Img}
       </Col>
-      <Col md={20} xs={24}>
+      <Col md={20} xs={18}>
         <Row className="project-box" onClick={() => setIsActive(!isActive)}>
           <Col md={8} xs={24}>
             <div className="project-box-title">{element.title}</div>
