@@ -1,4 +1,4 @@
-import {React, useRef, useEffect} from "react";
+import {React, useRef, useEffect, useState} from "react";
 import "../../styles/testimonial.css";
 import ava01 from "../../images/ava-1.jpg";
 import ava02 from "../../images/ava-2.jpg";
@@ -20,25 +20,28 @@ import { SiDjango, SiTensorflow } from 'react-icons/si';
 import { FaBrain } from 'react-icons/fa';
 import Skillbar from "../Skillbar/Skillbar";
 import {Row, Col} from 'antd'
+
 export default function Testimonial() {
+
+  
   const skills = [
-    { skill: 'HTML5', percentage: 90, icon: <FaHtml5 size={70}/>, learning: false},
-    { skill: 'CSS3', percentage: 70, icon: <FaCss3Alt size={70}/> , learning: false},
-    { skill: 'JavaScript', percentage: 60, icon: <FaJsSquare size={70}/> , learning: false},
-    { skill: 'React JS', percentage: 50, icon: <FaReact size={70}/>, learning: false },
-    { skill: 'Node JS', percentage: 70, icon: <FaNodeJs size={70}/>, learning: false },
-    { skill: 'MongoDB', percentage: 60, icon: <SiMongodb size={70}/> , learning: false},
-    { skill: 'AWS S3 Bucket', percentage: 60, icon: <SiAmazons3 size={70}/> , learning: false},
-    { skill: '.NET Framework', percentage: 80, icon: <SiDotnet size={70} />, learning: false },
-    { skill: 'Python', percentage: 80, icon: <FaPython size={70}/> , learning: false},
-    { skill: 'C++', percentage: 70, icon: <SiCplusplus size={70}/>, learning: false },
-    { skill: 'C#', percentage: 75, icon: <SiCsharp size={70}/>, learning: false },
-    { skill: 'WinForms', percentage: 90, icon: <FaWindows size={70}/>, learning: false },
-    { skill: 'WPF', percentage: 90, icon: <SiMicrosoft size={70}/>, learning: false },
-    { skill: 'Computer Vision', percentage: 40, icon: <FaEye size={70}/>, learning: false },
-    { skill: 'SQL', percentage: 70, icon: <SiMysql size={70}/> , learning: false},
-    { skill: 'Django', percentage: 0, icon: <SiDjango size={70}/>, learning: true },
-    { skill: 'Generative AI', percentage: 0, icon: <SiTensorflow size={70}/>, learning: true },
+    { skill: 'HTML5', percentage: 90, icon: <FaHtml5 size={30}/>, learning: false},
+    { skill: 'CSS3', percentage: 70, icon: <FaCss3Alt size={30}/> , learning: false},
+    { skill: 'JavaScript', percentage: 60, icon: <FaJsSquare size={30}/> , learning: false},
+    { skill: 'React JS', percentage: 50, icon: <FaReact size={30}/>, learning: false },
+    { skill: 'Node JS', percentage: 70, icon: <FaNodeJs size={30}/>, learning: false },
+    { skill: 'MongoDB', percentage: 60, icon: <SiMongodb size={30}/> , learning: false},
+    { skill: 'AWS S3 Bucket', percentage: 60, icon: <SiAmazons3 size={30}/> , learning: false},
+    { skill: '.NET Framework', percentage: 80, icon: <SiDotnet size={30} />, learning: false },
+    { skill: 'Python', percentage: 80, icon: <FaPython size={30}/> , learning: false},
+    { skill: 'C++', percentage: 70, icon: <SiCplusplus size={30}/>, learning: false },
+    { skill: 'C#', percentage: 75, icon: <SiCsharp size={30}/>, learning: false },
+    { skill: 'WinForms', percentage: 90, icon: <FaWindows size={30}/>, learning: false },
+    { skill: 'WPF', percentage: 90, icon: <SiMicrosoft size={30}/>, learning: false },
+    { skill: 'Computer Vision', percentage: 40, icon: <FaEye size={30}/>, learning: false },
+    { skill: 'SQL', percentage: 70, icon: <SiMysql size={30}/> , learning: false},
+    { skill: 'Django', percentage: 0, icon: <SiDjango size={30}/>, learning: true },
+    { skill: 'Generative AI', percentage: 0, icon: <SiTensorflow size={30}/>, learning: true },
     // Add more skills as needed
   ];
 
@@ -48,7 +51,7 @@ export default function Testimonial() {
         speed: 1000,
         autoplay: true,
         autoplaySpeed:2000,
-        slidesToShow: 1,
+        slidesToShow: 3,
         slidesToScroll: 1,
         swipeToSlide: true
       };
@@ -67,12 +70,12 @@ export default function Testimonial() {
           <Slider {...settings}>
           </Slider>
           </div> */}
+            {skills.map((skill, index) => (
+              <Col md={4} xs={12}>
+                  <Skillbar key={index} skill={skill.skill} percentage={skill.percentage} icon={skill.icon} learning={skill.learning} />
+              </Col>
+            ))}
 
-          {skills.map((skill, index) => (
-            <Col md={6} xs={24}>
-                <Skillbar key={index} skill={skill.skill} percentage={skill.percentage} icon={skill.icon} learning={skill.learning} />
-            </Col>
-          ))}
           </Row>
 
       </div>

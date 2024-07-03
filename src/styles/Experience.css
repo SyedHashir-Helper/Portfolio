@@ -15,3 +15,17 @@
     /* justify-content: center; */
     /* align-items: flex-start; */
 }
+@keyframes fading {
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+.experience-box-description{
+    /* padding: 1rem; */
+    color: white;
+    font-size: 0.85rem;
+}

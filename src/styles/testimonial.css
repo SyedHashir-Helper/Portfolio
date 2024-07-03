@@ -57,3 +57,17 @@
     }
 }
 
+.skill-bar-progress{
+    animation: slide 1s ease;
+}
+
+@keyframes slide {
+    0%{
+        margin-left: 1em;
+        opacity: 0;
+    }
+    100%{
+        margin-left: 0em;
+        opacity: 1;
+    }
+}
