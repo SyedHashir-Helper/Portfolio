@@ -6,6 +6,7 @@ import lightimg from "../../images/p.png";
 import profileimg from "../../images/profile.png";
 
 import {Row, Col} from "antd"
+import ContactIcons from "../ContactIcons/ContactIcons";
 
 export default function Hero(props) {
 
@@ -13,14 +14,17 @@ export default function Hero(props) {
     {
       icon: <FaWhatsapp size={30}/>,
       link: "https://wa.me/+923164219759",
+      text: "Whatsapp"
     },
     {
       icon: <FaEnvelope size={30}/>,
       link: "mailto:syedhashir1001@gmail.com",
+      text: "Mail"
     },
     {
       icon: <FaPhone size={30}/>,
       link: "tel:+923164219759",
+      text: "Contact"
     },
   ]
 
@@ -58,9 +62,12 @@ export default function Hero(props) {
               {
                 contacts.map((element, index)=>{
                   return(
-                    <Col key={index} className="icon-con" md={8} xs={8}>
-                      <a href={element.link}>{element.icon}</a>
-                    </Col>
+                    <ContactIcons
+                      element={element}
+                    />
+                    // <Col key={index} className="icon-con" md={8} xs={8}>
+                    //   <a href={element.link}>{element.icon}</a>
+                    // </Col>
                   )
                 })
               }

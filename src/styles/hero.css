@@ -155,8 +155,11 @@
     }
 }
 .icon-con a:hover{
+    transition: 2s ease;
     animation: change 3s infinite;
 }
+
+
 @keyframes change {
     0%{
         color: var(--btn-secondary-bg);
