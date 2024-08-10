@@ -30,11 +30,11 @@ const Experience = ({ element }) => {
         onMouseLeave={()=> sethovering(false)}
       >
         <Row className="project-box" onClick={() => setIsActive(!isActive)}>
-                      <Col md={8} xs={24}>
+                      <Col md={16} xs={24}>
                         <div className="project-box-title">{element.title}</div>
                         <div className="project-box-describe">{element.company}</div>
                       </Col>
-                      <Col md={12} xs={24} className="project-box-developed">
+                      <Col md={8} xs={24} className="project-box-developed">
                         {element.duration}
                       </Col>
 

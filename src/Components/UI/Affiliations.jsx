@@ -23,7 +23,7 @@ const serviceData = [
     icon: <img src={aspire} width={40} />,
     title: "Aspire Leader",
     Start: "April 2024",
-    Till: "Continue"
+    Till: "Aug 2024"
   },
   {
     icon: <img src={ss} width={40} />,
