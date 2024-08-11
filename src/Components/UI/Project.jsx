@@ -116,6 +116,16 @@ let data = [
     developed: "React JS",
     active: false
   },
+  {
+    title: "Llama 3 Chat",
+    describe: "Chatbot using Llama 3 API",
+    desc: "A entry level learning project how to use already built LLMs and utilizing their powerful features.",
+    github:
+      "https://github.com/SyedHashir-Helper/Llama3-Chatbot",
+    other: "https://llama3-chatbot-madeby-hashir.streamlit.app/",
+    keySkills: ["LLMs", "GROQ API", "Streamlit"],
+    developed: "Streamlit and GROQ"
+  },
 ];
 
 const Project = () => {
