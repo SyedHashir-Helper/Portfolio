@@ -126,6 +126,16 @@ let data = [
     keySkills: ["LLMs", "GROQ API", "Streamlit"],
     developed: "Streamlit and GROQ"
   },
+  {
+    title: "Mealian Guide",
+    describe: "Meal Recommendation System for Diabetes Patient",
+    desc: "An LLM based meal guide system for diabetes patient which helps them in their normal life sugar in-take control and provides them with healthy diet plan.",
+    github:
+      "https://github.com/SyedHashir-Helper/Mealian-Guide",
+    other: "https://mealian-guide-made-by-hashir.streamlit.app/",
+    keySkills: ["LLMs", "GROQ API", "Streamlit", "Use LLMs for Specfic use case"],
+    developed: "Streamlit and GROQ (Llama)"
+  },
 ];
 
 const Project = () => {
