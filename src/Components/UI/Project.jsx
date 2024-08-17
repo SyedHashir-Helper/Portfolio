@@ -136,6 +136,16 @@ let data = [
     keySkills: ["LLMs", "GROQ API", "Streamlit", "Use LLMs for Specfic use case"],
     developed: "Streamlit and GROQ (Llama)"
   },
+  {
+    title: "Lang-QL",
+    describe: "Natural Language to SQL Schema",
+    desc: "An LLM based SQL Schema generator using natural language input. Sql Schema in T-SQL, MySQL and PostgreSQL are supported",
+    github:
+      "https://github.com/SyedHashir-Helper/Lang-QL",
+    other: "https://lang-ql-made-by-hashir.streamlit.app/",
+    keySkills: ["LLMs", "GROQ API", "Streamlit", "Use LLMs for Specfic use case"],
+    developed: "Streamlit and GROQ (Llama)"
+  },
 ];
 
 const Project = () => {
