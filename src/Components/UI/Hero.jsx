@@ -1,14 +1,61 @@
 import React from "react";
 import "../../styles/hero.css";
-import { FaWhatsapp, FaEnvelope, FaPhone } from 'react-icons/fa';
+import { FaWhatsapp, FaEnvelope, FaPhone , FaInstagram, FaFacebook} from 'react-icons/fa';
 import herodarkimg from "../../images/p2.png";
 import lightimg from "../../images/p.png";
 import profileimg from "../../images/profile.png";
 
 import {Row, Col} from "antd"
 import ContactIcons from "../ContactIcons/ContactIcons";
+import Latest from "./Latest";
+import Highlight from "./Highlight";
+
+const hero_first = "Hi there! This is"
+const hero_typeWriter = "SYED HASHIR HUSNAIN"
+const headline = "xIntern @Netsol, x2 Hackathon Participant"
 
 export default function Hero(props) {
+
+
+  const whatsNowadays = [
+    {
+      title: "xIntern @Netsol",
+      description: "Worked as an intern at Netsol Technologies Pakistan",
+      status: "Completed",
+    },
+    {
+      title: "x2 Generative AI Hackathon",
+      description: "Participated in IBM WatsonX Challenge and iCodeGuru Gen AI Hackathon",
+      status: "Completed"
+    },
+    {
+      title: "Velostrike Marathon",
+      description: "It's a hackathon management website, where particpants find details and teams.",
+      status: "Ongoing",
+    },
+
+  ]
+
+  const highlights = [
+    {
+      title: "xIntern",
+      desc: "Netsol Technologies Pakistan"
+    },
+    {
+      title: "x2",
+      desc: "Generative AI Hackathons"
+    },
+    {
+      title: "Generative AI Certified",
+      desc: "@ Pak Angels & iCodeGuru"
+    },
+    {
+      title: "xSE Intern",
+      desc: "IREG-IT"
+    }
+
+  ]
+
 
   const contacts =  [
     {
@@ -26,6 +73,16 @@ export default function Hero(props) {
       link: "tel:+923164219759",
       text: "Contact"
     },
+    // {
+    //   icon: <FaInstagram size={30}/>,
+    //   link: "https://www.instagram.com/velocious_falcon/",
+    //   text: "Instagram"
+    // },
+    // {
+    //   icon: <FaFacebook size={30}/>,
+    //   link: "https://www.instagram.com/velocious_falcon/",
+    //   text: "Facebook"
+    // },
   ]
 
   const handleClick = (e) => {
@@ -44,10 +101,10 @@ export default function Hero(props) {
     <section className="hero-section" id="home">
       <div className="container">
         <Row className="hero-wrapper">
-          <Col className="hero-content">
-            <div className="typewriter">
-              <h2>Hi there! This is</h2>
-              <h2>SYED HASHIR HUSNAIN</h2>
+          <Col className="hero-content" md={24} lg={24}>
+            <div className="typewriter" >
+              <h2>{hero_first}</h2>
+              <h2>{hero_typeWriter}</h2>
               <h1 className="highlight profession">Software Engineer</h1>
             </div>
             <p className="description">
@@ -62,24 +119,52 @@ export default function Hero(props) {
               {
                 contacts.map((element, index)=>{
                   return(
-                    <ContactIcons
-                      element={element}
-                    />
-                    // <Col key={index} className="icon-con" md={8} xs={8}>
-                    //   <a href={element.link}>{element.icon}</a>
-                    // </Col>
+                      <ContactIcons key={index}
+                        element={element}
+                        />
                   )
                 })
               }
             </Row>
           </Col>
 
-          <Col className="hero-img">
+          <Col className="hero-img" md={12} lg={12}>
             <img
               src={profileimg}
               alt="Hero Image"
             />
           </Col>
+          <Col md={12} sm={24}>
+              <Row >
+                {
+                  highlights.map((element, index)=>{
+                    return (
+                      <Col span={24}>
+                        <Highlight 
+                          title={element.title}
+                          desc={element.desc}
+                        />
+                      </Col>
+                    )
+                  })
+                }
+              </Row>
+              <Highlight/>
+          </Col>
+
+          {/* <Col md={12} sm={24}>
+              {
+                whatsNowadays.map((element, index)=>{
+                  return (
+                    <Latest key={index}
+                      title={element.title}
+                      description={element.description}
+                      status={element.status}
+                    />
+                  )
+                })
+              }
+          </Col> */}
         </Row>
       </div>
     </section>

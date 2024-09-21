@@ -6,7 +6,7 @@ import { HiDesktopComputer } from "react-icons/hi"
 import ava03 from "../../images/ava-3.jpg";
 
 import Slider from "react-slick";
-import { FaJs, FaNodeJs, FaReact } from 'react-icons/fa';
+import { FaJs, FaNodeJs, FaReact, FaGithub, FaGit  } from 'react-icons/fa';
 import { SiMongodb, SiExpress } from 'react-icons/si';
 import {FaHtml5, FaCss3Alt, FaJsSquare } from 'react-icons/fa';
 import { SiDotnet } from 'react-icons/si';
@@ -41,7 +41,8 @@ export default function Testimonial() {
     { skill: 'Computer Vision', percentage: 40, icon: <FaEye size={30}/>, learning: false },
     { skill: 'SQL', percentage: 70, icon: <SiMysql size={30}/> , learning: false},
     { skill: 'Django', percentage: 0, icon: <SiDjango size={30}/>, learning: true },
-    { skill: 'Generative AI', percentage: 0, icon: <SiTensorflow size={30}/>, learning: true },
+    { skill: 'Generative AI', percentage: 60, icon: <SiTensorflow size={30}/>, learning: false },
+    { skill: 'Git', percentage: 85, icon: <FaGit size={30}/>, learning: false },
     // Add more skills as needed
   ];
 

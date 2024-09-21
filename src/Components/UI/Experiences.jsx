@@ -54,10 +54,10 @@ const positions = [
   },
   {
     Img: <img  src={netsol} className='img-fit'  />,
-    title: "Web Development Intern",
-    company: "Netsol",
-    duration: "Aug 2024 - Continue",
-    desc: "Selected for 4-weeks Web Development Internship "
+    title: "Data Engineer Intern",
+    company: "Netsol Technologies Pakistan",
+    duration: "Aug 2024 - Sep 2024",
+    desc: "Selected for 4-weeks Data Engineer Internship. Worked on SQL and got knowledge about ETL Tools."
   },
 ]
 

@@ -146,6 +146,16 @@ let data = [
     keySkills: ["LLMs", "GROQ API", "Streamlit", "Use LLMs for Specfic use case"],
     developed: "Streamlit and GROQ (Llama)"
   },
+  {
+    title: "GenMail",
+    describe: "AI-based Email Writer and Formatter",
+    desc: "An LLM based Email Writing Tool works on prompt and generate email for you to which you have ability to edit and format your email. You can send your signature as attachment as well.",
+    github:
+      "https://github.com/SyedHashir-Helper/Lang-QL",
+    other: "https://lang-ql-made-by-hashir.streamlit.app/",
+    keySkills: ["LLMs", "GROQ API", "Streamlit", "Use LLMs for Specfic use case"],
+    developed: "Streamlit and GROQ (Llama)"
+  },
 ];
 
 const Project = () => {

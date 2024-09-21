@@ -38,7 +38,7 @@ export default function Counter() {
   return (
     <section id="about" >
         <div className="container">
-        <div className="counter-wrapper">
+            <div className="counter-wrapper">
                 {
                     basicinfo.map((item, index) => (
                         <div className="counter-item" key={index}>
